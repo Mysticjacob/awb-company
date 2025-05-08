@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
       const token = localStorage.getItem("token");
       if (token) {
         try {
-          const response = await axios.get("https://cloud-computing-ecru.vercel.app/api/auth/user", {
+          const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/auth/user", {
             headers: { Authorization: `Bearer ${token}` },
           });
           setUser(response.data);
@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const response = await axios.post("https://cloud-computing-ecru.vercel.app/api/auth/login", { email, password });
+      const response = await axios.post("https://cloud-computing-2p5i.vercel.app/api/auth/login", { email, password });
       localStorage.setItem("token", response.data.token);
       setUser(response.data.user);
     } catch (error) {

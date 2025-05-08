@@ -6,7 +6,7 @@ const PasswordReset = () => {
 
   const handlePasswordReset = async () => {
     try {
-      await axios.post("https://cloud-computing-ecru.vercel.app/api/auth/reset-password", { email });
+      await axios.post("https://cloud-computing-2p5i.vercel.app/api/auth/reset-password", { email });
       alert("Password reset link sent to your email.");
     } catch (error) {
       alert("Error sending password reset link.");

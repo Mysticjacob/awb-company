@@ -12,7 +12,7 @@ const ProductList = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const { data } = await axios.get("https://cloud-computing-ecru.vercel.app/api/products");
+        const { data } = await axios.get("https://cloud-computing-2p5i.vercel.app/api/products");
         console.log("Fetched Products Data:", data); // Debugging to check image property
         setProducts(data);
       } catch (error) {

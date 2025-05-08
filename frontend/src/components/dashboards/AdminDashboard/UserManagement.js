@@ -16,7 +16,7 @@ const UserManagement = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("https://cloud-computing-ecru.vercel.app/api/admin/users", {
+      const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/admin/users", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUsers(response.data);
@@ -32,7 +32,7 @@ const UserManagement = () => {
   const handleAddUser = async () => {
     try {
       setLoading(true);
-      await axios.post("https://cloud-computing-ecru.vercel.app/api/admin/users", newUser, {
+      await axios.post("https://cloud-computing-2p5i.vercel.app/api/admin/users", newUser, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert("User added successfully!");
@@ -49,7 +49,7 @@ const UserManagement = () => {
     if (!window.confirm("Are you sure you want to delete this user?")) return;
 
     try {
-      await axios.delete(`https://cloud-computing-ecru.vercel.app/api/admin/users/${userId}`, {
+      await axios.delete(`https://cloud-computing-2p5i.vercel.app/api/admin/users/${userId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert("User deleted successfully!");

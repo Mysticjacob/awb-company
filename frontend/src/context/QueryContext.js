@@ -10,7 +10,7 @@ export const QueryProvider = ({ children }) => {
   const submitQuery = async (queryData) => {
     try {
       setLoading(true);
-      const response = await axios.post("https://cloud-computing-ecru.vercel.app/api/support/submit", queryData);
+      const response = await axios.post("https://cloud-computing-2p5i.vercel.app/api/support/submit", queryData);
       setQueries([...queries, response.data]);
       setLoading(false);
     } catch (error) {

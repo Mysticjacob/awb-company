@@ -4,7 +4,7 @@ import axios from "axios";
 const DeploymentControls = () => {
   const handleDeploy = async () => {
     try {
-      await axios.post("https://cloud-computing-ecru.vercel.app/api/developer/deploy");
+      await axios.post("https://cloud-computing-2p5i.vercel.app/api/developer/deploy");
       alert("Application deployed successfully!");
     } catch (error) {
       alert("Deployment failed.");
@@ -13,7 +13,7 @@ const DeploymentControls = () => {
 
   const handleRestart = async () => {
     try {
-      await axios.post("https://cloud-computing-ecru.vercel.app/api/developer/restart");
+      await axios.post("https://cloud-computing-2p5i.vercel.app/api/developer/restart");
       alert("Server restarted successfully!");
     } catch (error) {
       alert("Restart failed.");
@@ -22,7 +22,7 @@ const DeploymentControls = () => {
 
   const handleRollback = async () => {
     try {
-      await axios.post("https://cloud-computing-ecru.vercel.app/api/developer/rollback");
+      await axios.post("https://cloud-computing-2p5i.vercel.app/api/developer/rollback");
       alert("Application rolled back successfully!");
     } catch (error) {
       alert("Rollback failed.");

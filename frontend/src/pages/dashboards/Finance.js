@@ -21,7 +21,7 @@ const Finance = () => {
   useEffect(() => {
     const fetchFinanceData = async () => {
       try {
-        const { data } = await axios.get("https://cloud-computing-ecru.vercel.app/api/finance");
+        const { data } = await axios.get("https://cloud-computing-2p5i.vercel.app/api/finance");
         setFinanceData(data);
       } catch (error) {
         console.error("❌ Error fetching finance data", error);

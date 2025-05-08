@@ -8,7 +8,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("https://cloud-computing-ecru.vercel.app/api/products");
+        const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/products");
         setProducts(response.data);
       } catch (error) {
         console.error("Error fetching products", error);

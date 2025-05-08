@@ -25,7 +25,7 @@ const ProductManager = () => {
 
   const handleAddProduct = async () => {
     try {
-      await axios.post("https://cloud-computing-ecru.vercel.app/api/products", {
+      await axios.post("https://cloud-computing-2p5i.vercel.app/api/products", {
         ...newProduct,
         price: parseFloat(newProduct.price),
       });
@@ -39,7 +39,7 @@ const ProductManager = () => {
   const handleDelete = async (id) => {
     if (!window.confirm("Delete this product?")) return;
     try {
-      await axios.delete(`https://cloud-computing-ecru.vercel.app/api/products/${id}`);
+      await axios.delete(`https://cloud-computing-2p5i.vercel.app/api/products/${id}`);
       fetchProducts();
     } catch (err) {
       alert("Error deleting product");

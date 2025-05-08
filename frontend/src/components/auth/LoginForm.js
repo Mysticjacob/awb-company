@@ -7,7 +7,7 @@ const LoginForm = ({ onLoginSuccess }) => {
 
   const handleLogin = async () => {
     try {
-      const { data } = await axios.post("https://cloud-computing-ecru.vercel.app/api/auth/login", { email, password });
+      const { data } = await axios.post("https://cloud-computing-2p5i.vercel.app/api/auth/login", { email, password });
       localStorage.setItem("token", data.token);
       onLoginSuccess(); // Callback for successful login
     } catch (error) {

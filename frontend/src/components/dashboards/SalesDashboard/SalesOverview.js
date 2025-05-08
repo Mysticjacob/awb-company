@@ -18,7 +18,7 @@ const SalesDashboard = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("https://cloud-computing-ecru.vercel.app/api/products");
+      const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/products");
       setProducts(response.data);
     } catch (error) {
       console.error("Error fetching products:", error);
@@ -27,7 +27,7 @@ const SalesDashboard = () => {
 
   const fetchSalesData = async () => {
     try {
-      const response = await axios.get("https://cloud-computing-ecru.vercel.app/api/sales/overview", {
+      const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/sales/overview", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setSalesSummary(response.data);
@@ -39,7 +39,7 @@ const SalesDashboard = () => {
   const handleAddProduct = async () => {
     try {
       setLoading(true);
-      await axios.post("https://cloud-computing-ecru.vercel.app/api/products", newProduct, {
+      await axios.post("https://cloud-computing-2p5i.vercel.app/api/products", newProduct, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert("Product added!");
@@ -55,7 +55,7 @@ const SalesDashboard = () => {
   const handleDeleteProduct = async (productId) => {
     if (!window.confirm("Are you sure you want to delete this product?")) return;
     try {
-      await axios.delete(`https://cloud-computing-ecru.vercel.app/api/products/${productId}`, {
+      await axios.delete(`https://cloud-computing-2p5i.vercel.app/api/products/${productId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert("Product deleted!");

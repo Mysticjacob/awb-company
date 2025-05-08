@@ -6,7 +6,7 @@ const MFAInput = ({ userId, onVerify }) => {
 
   const handleVerify = async () => {
     try {
-      await axios.post("https://cloud-computing-ecru.vercel.app/api/auth/verify-mfa", { userId, mfaCode });
+      await axios.post("https://cloud-computing-2p5i.vercel.app/api/auth/verify-mfa", { userId, mfaCode });
       alert("MFA verification successful!");
       onVerify();
     } catch (error) {

@@ -11,7 +11,7 @@ const SystemConfiguration = () => {
   const fetchConfig = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("https://cloud-computing-ecru.vercel.app/api/admin/config", {
+      const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/admin/config", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setConfig(response.data);
@@ -25,7 +25,7 @@ const SystemConfiguration = () => {
   const handleUpdateConfig = async () => {
     setSaving(true);
     try {
-      await axios.put("https://cloud-computing-ecru.vercel.app/api/admin/config", config, {
+      await axios.put("https://cloud-computing-2p5i.vercel.app/api/admin/config", config, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert("Configuration updated successfully!");

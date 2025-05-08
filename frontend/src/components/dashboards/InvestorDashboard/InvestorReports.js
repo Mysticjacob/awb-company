@@ -4,7 +4,7 @@ import axios from "axios";
 const InvestorReports = () => {
   const handleExport = async () => {
     try {
-      const response = await axios.get("https://cloud-computing-ecru.vercel.app/api/investor/export-report", {
+      const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/investor/export-report", {
         responseType: "blob",
       });
 

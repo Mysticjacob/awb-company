@@ -43,7 +43,7 @@ const FinancialCharts = () => {
   useEffect(() => {
     const fetchChartData = async () => {
       try {
-        const response = await axios.get("https://cloud-computing-ecru.vercel.app/api/finance/chart");
+        const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/finance/chart");
         console.log("✅ Fetched Financial Data:", response.data); // Debugging log
 
         if (!response.data || response.data.length === 0) {
