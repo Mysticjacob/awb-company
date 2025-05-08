@@ -16,7 +16,7 @@ const SalesRecords = () => {
   useEffect(() => {
     const fetchSalesRecords = async () => {
       try {
-        const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/sales");
+        const response = await axios.get("https://cloud-computing-d7av.vercel.app/api/sales");
         console.log("✅ Fetched Sales Records:", response.data); // Debugging log
         if (!response.data || response.data.length === 0) {
           throw new Error("No sales records found.");

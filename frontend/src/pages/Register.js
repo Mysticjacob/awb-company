@@ -14,7 +14,7 @@ const Register = () => {
     }
 
     try {
-      await axios.post("https://cloud-computing-2p5i.vercel.app/api/auth/register", { name, email, password, role });
+      await axios.post("https://cloud-computing-d7av.vercel.app/api/auth/register", { name, email, password, role });
       alert("Registration successful! Please log in.");
     } catch (error) {
       alert("Registration failed!");

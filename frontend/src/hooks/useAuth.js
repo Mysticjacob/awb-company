@@ -10,7 +10,7 @@ const useAuth = () => {
       const token = localStorage.getItem("token");
       if (token) {
         try {
-          const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/auth/user", {
+          const response = await axios.get("https://cloud-computing-d7av.vercel.app/api/auth/user", {
             headers: { Authorization: `Bearer ${token}` },
           });
           setUser(response.data);

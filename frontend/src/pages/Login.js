@@ -10,7 +10,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const { data } = await axios.post("https://cloud-computing-2p5i.vercel.app/api/auth/login", { email, password });
+      const { data } = await axios.post("https://cloud-computing-d7av.vercel.app/api/auth/login", { email, password });
 
       // Store authentication data
       localStorage.setItem("token", data.token);

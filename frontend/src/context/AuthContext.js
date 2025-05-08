@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const response = await axios.post("https://cloud-computing-2p5i.vercel.app/api/auth/login", { email, password });
+      const response = await axios.post("https://cloud-computing-d7av.vercel.app/api/auth/login", { email, password });
       localStorage.setItem("token", response.data.token);
       setUser(response.data.user);
     } catch (error) {

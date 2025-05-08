@@ -22,7 +22,7 @@ const DeploymentControls = () => {
 
   const handleRollback = async () => {
     try {
-      await axios.post("https://cloud-computing-2p5i.vercel.app/api/developer/rollback");
+      await axios.post("https://cloud-computing-d7av.vercel.app/api/developer/rollback");
       alert("Application rolled back successfully!");
     } catch (error) {
       alert("Rollback failed.");

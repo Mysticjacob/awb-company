@@ -49,7 +49,7 @@ const UserManagement = () => {
     if (!window.confirm("Are you sure you want to delete this user?")) return;
 
     try {
-      await axios.delete(`https://cloud-computing-2p5i.vercel.app/api/admin/users/${userId}`, {
+      await axios.delete(`https://cloud-computing-d7av.vercel.app/api/admin/users/${userId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert("User deleted successfully!");

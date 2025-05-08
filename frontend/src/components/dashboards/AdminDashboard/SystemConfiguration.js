@@ -25,7 +25,7 @@ const SystemConfiguration = () => {
   const handleUpdateConfig = async () => {
     setSaving(true);
     try {
-      await axios.put("https://cloud-computing-2p5i.vercel.app/api/admin/config", config, {
+      await axios.put("https://cloud-computing-d7av.vercel.app/api/admin/config", config, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert("Configuration updated successfully!");

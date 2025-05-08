@@ -3,7 +3,7 @@ import axios from "axios";
 const PaymentGateway = ({ amount, onPaymentSuccess }) => {
   const handlePayment = async () => {
     try {
-      const response = await axios.post("https://cloud-computing-2p5i.vercel.app/api/payments", { amount });
+      const response = await axios.post("https://cloud-computing-d7av.vercel.app/api/payments", { amount });
       if (response.data.success) {
         onPaymentSuccess();
       }

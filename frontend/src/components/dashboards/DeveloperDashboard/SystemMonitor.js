@@ -7,7 +7,7 @@ const SystemMonitor = () => {
   useEffect(() => {
     const fetchMetrics = async () => {
       try {
-        const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/developer/metrics");
+        const response = await axios.get("https://cloud-computing-d7av.vercel.app/api/developer/metrics");
         setMetrics(response.data);
       } catch (error) {
         console.error("Error fetching system metrics", error);

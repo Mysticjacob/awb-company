@@ -9,7 +9,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://cloud-computing-2p5i.vercel.app/api/support/submit", { name, email, message });
+      await axios.post("https://cloud-computing-d7av.vercel.app/api/support/submit", { name, email, message });
       alert("Your query has been submitted!");
     } catch (error) {
       alert("Error submitting query.");

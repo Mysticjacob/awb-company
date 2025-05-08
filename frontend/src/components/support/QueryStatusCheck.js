@@ -7,7 +7,7 @@ const QueryStatusCheck = () => {
 
   const checkStatus = async () => {
     try {
-      const response = await axios.get(`https://cloud-computing-2p5i.vercel.app/api/support/status?email=${email}`);
+      const response = await axios.get(`https://cloud-computing-d7av.vercel.app/api/support/status?email=${email}`);
       setStatus(response.data.status);
     } catch (error) {
       alert("Error checking query status.");

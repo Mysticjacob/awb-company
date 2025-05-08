@@ -8,7 +8,7 @@ const Cart = ({ cartItems }) => {
     try {
       await Promise.all(
         cartItems.map(async (item) => {
-          await axios.post("https://cloud-computing-2p5i.vercel.app/api/sales/record", {
+          await axios.post("https://cloud-computing-d7av.vercel.app/api/sales/record", {
             productName: item.name,
             price: item.price,
             quantity: 1 // ✅ Removed buyerEmail field

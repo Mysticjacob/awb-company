@@ -9,7 +9,7 @@ const IncomeStatement = () => {
   useEffect(() => {
     const fetchFinanceData = async () => {
       try {
-        const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/finance/statement");
+        const response = await axios.get("https://cloud-computing-d7av.vercel.app/api/finance/statement");
         setFinanceData(response.data);
       } catch (error) {
         console.error("Error fetching financial data", error);

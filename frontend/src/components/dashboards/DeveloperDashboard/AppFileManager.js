@@ -7,7 +7,7 @@ const AppFileManager = () => {
   useEffect(() => {
     const fetchFiles = async () => {
       try {
-        const response = await axios.get("https://cloud-computing-2p5i.vercel.app/api/developer/files");
+        const response = await axios.get("https://cloud-computing-d7av.vercel.app/api/developer/files");
         setFiles(response.data);
       } catch (error) {
         console.error("Error fetching files", error);

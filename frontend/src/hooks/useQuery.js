@@ -8,7 +8,7 @@ const useQuery = () => {
   const submitQuery = async (queryData) => {
     try {
       setLoading(true);
-      const response = await axios.post("https://cloud-computing-2p5i.vercel.app/api/support/submit", queryData);
+      const response = await axios.post("https://cloud-computing-d7av.vercel.app/api/support/submit", queryData);
       setQueries([...queries, response.data]);
       setLoading(false);
     } catch (error) {
@@ -19,7 +19,7 @@ const useQuery = () => {
 
   const checkQueryStatus = async (email) => {
     try {
-      const response = await axios.get(`https://cloud-computing-2p5i.vercel.app/api/support/status?email=${email}`);
+      const response = await axios.get(`https://cloud-computing-d7av.vercel.app/api/support/status?email=${email}`);
       return response.data.status;
     } catch (error) {
       console.error("Error fetching query status:", error);
